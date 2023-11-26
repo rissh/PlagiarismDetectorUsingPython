@@ -1,0 +1,3 @@
+python>=3.6
+Flask==2.0.1
+# Add any other dependencies with their versions as needed
