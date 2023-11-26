@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagiarism Detection - Home</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #ecf0f1;
+        background-color: #2c3e50;
+      }
+
+      h1 {
+        text-align: center;
+        color: #3498db;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      label {
+        margin-bottom: 8px;
+        color: #ecf0f1;
+        font-weight: bold;
+      }
+
+      textarea {
+        width: 80%;
+        max-width: 400px;
+        padding: 8px;
+        margin-bottom: 10px; /* Adjusted spacing */
+        background-color: #34495e;
+        color: #ecf0f1;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        resize: vertical;
+        text-align: center;
+        margin: 0 auto; /* Center the textarea */
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #ecf0f1;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Plagiarism Detection</h1>
+    <form action="/compare" method="post">
+      <label for="text1">Text 1:</label>
+      <textarea name="text1" rows="4" cols="50" required></textarea>
+      <label for="text2" style="margin-top: 10px">Text 2:</label>
+      <!-- Adjusted spacing for subheading -->
+      <textarea name="text2" rows="4" cols="50" required></textarea>
+      <button type="submit" style="margin-top: 10px">
+        Compare <span>&#8594;</span>
+      </button>
+      <!-- Adjusted spacing for button -->
+    </form>
+  </body>
+</html>

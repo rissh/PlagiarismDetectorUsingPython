@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagiarism Detection - Result</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #ecf0f1;
+        background-color: #2c3e50;
+      }
+
+      h2 {
+        text-align: center;
+        color: #e74c3c;
+        font-weight: bold;
+      }
+
+      p {
+        text-align: center;
+        color: #2ecc71;
+        font-size: 18px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        color: #3498db;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Result:</h2>
+    <p>Plagiarism Percentage: {{ "{:.2%}".format(similarity_ratio) }}</p>
+    <a href="/">Back to Home</a>
+  </body>
+</html>
